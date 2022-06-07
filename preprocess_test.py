@@ -17,7 +17,7 @@ def preprocess_string(text):
             no_emoticon += char
 
     # 특수문자 기준 split
-    no_punctuation = re.split(r'([!,?]+)|([.]+)|([,]+)|(["])|([\'])|([&]+)|([(]+)|([)]+)|([~]+)|([♡]+)|([☆,★]+)',
+    no_punctuation = re.split(r'([!,?]+)|([.]+)|([*]+)|([,]+)|(["])|([\'])|([&]+)|([(]+)|([)]+)|([~]+)|([♡]+)|([☆,★]+)',
                               no_emoticon.strip())
     no_punctuation_text = []
 
